@@ -2,96 +2,98 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>EATKETLIST</title>
-    <link rel="stylesheet" href="/main.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Bagel+Fat+One&family=Nanum+Gothic:wght@400;700&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EATKETLIST</title>
+  <link rel="stylesheet" href="/main.css">
+  <link rel="stylesheet" href="/web/static/pretendard.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=REM:wght@400;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    <header>
-        <div class="title">
-            <div class="inner">
-                <h1>Let Eat GO!</h1>
-            </div>
-        </div>
-    </header>
+  <header>
+    <div class="title">
+      <div class="inner">
+        <h1>Let Eat GO!</h1>
+      </div>
+    </div>
+  </header>
 
-    <main>
-        <form class="form-input">
-            <select>
-                <option disabled selected>종류 선택</option>
-                <option>한식</option>
-                <option>중식</option>
-                <option>일식</option>
-                <option>양식</option>
-                <option>분식</option>
-                <option>기타</option>
-            </select>
-            <input type="text" class="input" placeholder="장소 입력" size="50px">
-            <input type="url" class="input" placeholder="링크 입력" size="50px">
-            <button type="submit" class="input-btn">등록</button>
-        </form>
+  <main>
+    <form class="form-input">
+      <select>
+        <option disabled selected>종류 선택</option>
+        <option class="korean">한식</option>
+        <option class="chinese">중식</option>
+        <option class="japanese">일식</option>
+        <option class="western">양식</option>
+        <option class="snack">분식</option>
+        <option class="etc">기타</option>
+      </select>
+      <input type="text" class="input place" placeholder="장소 입력" size="50px">
+      <input type="url" class="input link" placeholder="링크 입력" size="50px">
+      <button type="submit" class="input-btn">등록</button>
+    </form>
+    <div class="list-container">
+      <div class="korean food-list">
+        <fieldset>
+          <legend>한식</legend>
+          <input type="checkbox">음식1<br><br>
+          <input type="checkbox">음식2<br><br>
+          <input type="checkbox">음식3<br><br>
 
-        <div class="list">
-            <div class="korean food-list">
-                <fieldset>
-                    <legend>한식</legend>
-                    <input type="checkbox">음식1<br><br>
-                    <input type="checkbox">음식2<br><br>
-                    <input type="checkbox">음식3<br><br>
-                    
-                </fieldset>
-            </div>
+        </fieldset>
+      </div>
 
-            <div class="chinese food-list">
-                <fieldset>
-                    <legend>중식</legend>
-                    <input type="checkbox">음식1<br><br>
-                    <input type="checkbox">음식2<br><br>
-                    <input type="checkbox">음식3<br><br>
-                </fieldset>
-            </div>
+      <div class="chinese food-list">
+        <fieldset>
+          <legend>중식</legend>
+          <input type="checkbox">음식1<br><br>
+          <input type="checkbox">음식2<br><br>
+          <input type="checkbox">음식3<br><br>
+        </fieldset>
+      </div>
 
-            <div class="japanese food-list">
-                <fieldset>
-                    <legend>일식</legend>
-                    <input type="checkbox">음식1<br><br>
-                    <input type="checkbox">음식2<br><br>
-                    <input type="checkbox">음식3<br><br>
-                </fieldset>
-            </div>
+      <div class="japanese food-list">
+        <fieldset>
+          <legend>일식</legend>
+          <input type="checkbox">음식1<br><br>
+          <input type="checkbox">음식2<br><br>
+          <input type="checkbox">음식3<br><br>
+        </fieldset>
+      </div>
 
-            <div class="western food-list">
-                <fieldset>
-                    <legend>양식</legend>
-                    <input type="checkbox">음식1<br><br>
-                    <input type="checkbox">음식2<br><br>
-                    <input type="checkbox">음식3<br><br>
-                </fieldset>
-            </div>
+      <div class="western food-list">
+        <fieldset>
+          <legend>양식</legend>
+          <input type="checkbox">음식1<br><br>
+          <input type="checkbox">음식2<br><br>
+          <input type="checkbox">음식3<br><br>
+        </fieldset>
+      </div>
 
-            <div class="snack food-list">
-                <fieldset>
-                    <legend>분식</legend>
-                    <input type="checkbox">음식1<br><br>
-                    <input type="checkbox">음식2<br><br>
-                    <input type="checkbox">음식3<br><br>
-                </fieldset>
-            </div>
-            <div class="etc food-list">
-                <fieldset>
-                    <legend>기타</legend>
-                    <input type="checkbox">음식1<br><br>
-                    <input type="checkbox">음식2<br><br>
-                    <input type="checkbox">음식3<br><br>
-                </fieldset>
-            </div>
-        </div>
-    </main>
+      <div class="snack food-list">
+        <fieldset>
+          <legend>분식</legend>
+          <input type="checkbox">음식1<br><br>
+          <input type="checkbox">음식2<br><br>
+          <input type="checkbox">음식3<br><br>
+        </fieldset>
+      </div>
+      <div class="etc food-list">
+        <fieldset>
+          <legend>기타</legend>
+          <input type="checkbox">음식1<br><br>
+          <input type="checkbox">음식2<br><br>
+          <input type="checkbox">음식3<br><br>
+        </fieldset>
+      </div>
+    </div>
+  </main>
 </body>
 
 </html>
+
+<script src="/main.js"></script>
