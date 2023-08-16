@@ -114,6 +114,7 @@ header .title .inner>h1 {
 .food-list fieldset {
   border: 1px solid green;
   border-radius: 5px;
+  height: 500px;
 }
 
 .food-list fieldset legend {
@@ -124,4 +125,10 @@ header .title .inner>h1 {
 
 .food-list fieldset {
   color: #333;
+}
+
+input:checked + label{
+  color: gray;
+  font-style: italic;
+  text-decoration: line-through;
 }
