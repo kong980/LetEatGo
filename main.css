@@ -127,8 +127,12 @@ header .title .inner>h1 {
   color: #333;
 }
 
-input:checked + label{
+:checked + a{
   color: gray;
   font-style: italic;
   text-decoration: line-through;
+}
+
+.food-list div{
+  margin: 20px auto;
 }
