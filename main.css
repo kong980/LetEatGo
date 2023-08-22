@@ -79,7 +79,7 @@ header .title .inner>h1 {
 
 .form-input .input-btn {
   position: absolute;
-  right: 5%;
+  right: 10%;
   top: 0;
   width: 49px;
   height: 49px;
@@ -115,6 +115,8 @@ header .title .inner>h1 {
   border: 1px solid green;
   border-radius: 5px;
   height: 500px;
+  color: #333;
+  overflow: auto;
 }
 
 .food-list fieldset legend {
@@ -123,14 +125,14 @@ header .title .inner>h1 {
   color: rgb(7, 65, 7);
 }
 
-.food-list fieldset {
-  color: #333;
-}
-
 :checked + a{
   color: gray;
   font-style: italic;
   text-decoration: line-through;
+}
+
+input:checked{
+  accent-color: rgb(7, 65, 7);
 }
 
 .food-list div{
