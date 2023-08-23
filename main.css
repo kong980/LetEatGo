@@ -39,7 +39,7 @@ header .title .inner>h1 {
   bottom: 0;
   border: none;
   border-radius: 5px;
-  color: #fff;
+  color: blanchedalmond;
   background-color: green;
   width: 13%;
   padding: 13px;
@@ -112,6 +112,7 @@ header .title .inner>h1 {
 }
 
 .food-list fieldset {
+  position: relative;
   border: 1px solid green;
   border-radius: 5px;
   height: 500px;
@@ -120,21 +121,72 @@ header .title .inner>h1 {
 }
 
 .food-list fieldset legend {
-  font-size: 17px;
+  font-size: 20px;
   font-weight: 700;
   color: rgb(7, 65, 7);
 }
 
-:checked + a{
+/* :checked + a{
   color: gray;
   font-style: italic;
   text-decoration: line-through;
+} */
+
+.food-list ul{
+  margin: 50px auto;
 }
 
-input:checked{
-  accent-color: rgb(7, 65, 7);
+.food-list li{
+  margin: 30px auto;
+  font-size: 17px;
 }
 
-.food-list div{
-  margin: 20px auto;
+.food-list li::marker{
+  /* content: '- '; */
+  color: rgb(2, 59, 2);
+  font-size: 20px;
+}
+
+.korean.food-list{
+  display: block;
+}
+
+.food-list .go-site{
+  position: fix;
+  left: 38%;
+  top: 30px;
+  height: 400px;
+  width: 60%;
+  /* background-color: red; */
+}
+
+.food-list .go-site #map{
+  height: 328px;
+  width: 87%;
+  background-color: orange;
+  margin: 15px auto;
+}
+
+.go-site .map-btn{
+  position: absolute;
+  left: 6.5%;
+  bottom: -10px;
+  width: 300px;
+  height: 50px;
+}
+
+.go-site .map-btn button{
+  border: none;
+  border-radius: 8px;
+  color: blanchedalmond;
+  background-color: green;
+  width: 43%;
+  height: 45px;
+  padding: 13px;
+  font-size: 17px;
+
+}
+
+.go-site .map-btn .delete-btn{
+  margin-left: 30px;
 }
